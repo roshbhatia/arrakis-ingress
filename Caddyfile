@@ -6,27 +6,33 @@ arrakis.stork-eel.ts.net {
 	root * /var/www
 	file_server
 
-	route /grafana* {
+	handle_path /grafana* {
+		uri strip_prefix /grafana
 		reverse_proxy localhost:3000
 	}
 
-	route /plex* {
+	handle_path /plex* {
+		uri strip_prefix /plex
 		reverse_proxy localhost:32400
 	}
 
-	route /overseerr* {
+	handle_path /overseerr* {
+		uri strip_prefix /overseerr
 		reverse_proxy localhost:5055
 	}
 
-	route /nzbget* {
+	handle_path /nzbget* {
+		uri strip_prefix /nzbget
 		reverse_proxy localhost:6789
 	}
 
-	route /sonarr* {
+	handle_path /sonarr* {
+		uri strip_prefix /sonarr
 		reverse_proxy localhost:8989
 	}
 
-	route /radarr* {
+	handle_path /radarr* {
+		uri strip_prefix /radarr
 		reverse_proxy localhost:7878
 	}
 }
