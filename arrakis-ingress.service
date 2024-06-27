@@ -7,8 +7,8 @@ Requires=docker.service
 Type=simple
 User=rshnbhatia
 WorkingDirectory=/home/rshnbhatia/github/rshnbhatia/arrakis-ingress
-ExecStart=/usr/bin/docker compose -f /home/rshnbhatia/github/other/spleeter-web/docker-compose.yaml up
-ExecStop=/usr/bin/docker compose -f /home/rshnbhatia/github/other/spleeter-web/docker-compose.yaml down
+ExecStart=/usr/bin/docker compose -f /home/rshnbhatia/github/other/arrakis-ingress/docker-compose.yaml up
+ExecStop=/usr/bin/docker compose -f /home/rshnbhatia/github/other/arrakis-ingress/docker-compose.yaml down
 Restart=always
 RestartSec=5s
 
