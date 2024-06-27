@@ -6,33 +6,27 @@ arrakis.stork-eel.ts.net {
 	root * /var/www
 	file_server
 
-	handle /grafana/* {
-		uri strip_prefix /grafana
-		reverse_proxy localhost:3000
+	handle /grafana {
+		redir https://arrakis.stork-eel.ts.net:3000
 	}
 
-	handle /plex/* {
-		uri strip_prefix /plex
-		reverse_proxy localhost:32400
+	handle /plex {
+		redir https://arrakis.stork-eel.ts.net:32400
 	}
 
-	handle /overseerr/* {
-		uri strip_prefix /overseerr
-		reverse_proxy localhost:5055
+	handle /overseerr {
+		redir https://arrakis.stork-eel.ts.net:5055
 	}
 
-	handle /nzbget/* {
-		uri strip_prefix /nzbget
-		reverse_proxy localhost:6789
+	handle /nzbget {
+		redir https://arrakis.stork-eel.ts.net:6789
 	}
 
-	handle /sonarr/* {
-		uri strip_prefix /sonarr
-		reverse_proxy localhost:8989
+	handle /sonarr {
+		redir https://arrakis.stork-eel.ts.net:8989
 	}
 
-	handle /radarr/* {
-		uri strip_prefix /radarr
-		reverse_proxy localhost:7878
+	handle /radarr {
+		redir https://arrakis.stork-eel.ts.net:7878
 	}
 }
