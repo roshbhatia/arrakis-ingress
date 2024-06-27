@@ -1,29 +1,29 @@
 # grafana
-grafana.arrakis {
+http://grafana.arrakis {
     reverse_proxy localhost:3000
 }
 
 # plex
-plex.arrakis {
+http://plex.arrakis {
     reverse_proxy localhost:32400
 }
 
 # overseerr
-overseer.arrakis {
+http://overseer.arrakis {
     reverse_proxy localhost:5055
 }
 
 # nzbget
-nzbget.arrakis {
+http://nzbget.arrakis {
     reverse_proxy localhost:6789
 }
 
 # sonarr
-sonarr.arrakis {
+http://sonarr.arrakis {
     reverse_proxy localhost:8989
 }
 
 # radarr
-radarr.arrakis {
+http://radarr.arrakis {
     reverse_proxy localhost:7878
 }
