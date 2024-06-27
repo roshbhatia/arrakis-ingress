@@ -12,5 +12,6 @@ services:
             - ./index.html:/var/www/index.html
             - /var/run/tailscale/tailscaled.sock:/var/run/tailscale/tailscaled.sock
         restart: unless-stopped
+        network_mode: "host"
         environment:
             - TS_PERMIT_CERT_UID=caddy
