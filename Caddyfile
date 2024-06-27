@@ -2,10 +2,6 @@
 	auto_https disable_redirects
 }
 
-# Provide non-root users access to fetch certificate
-# Ensure TS_PERMIT_CERT_UID is set to the appropriate user in /etc/default/tailscaled
-
-# Static file server and service routes
 arrakis.stork-eel.ts.net {
 	root * /var/www
 	file_server

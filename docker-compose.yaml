@@ -10,6 +10,7 @@ services:
         volumes:
             - ./Caddyfile:/etc/caddy/Caddyfile
             - ./index.html:/var/www/index.html
+            - /var/run/tailscale/tailscaled.sock:/var/run/tailscale/tailscaled.sock
         restart: unless-stopped
         environment:
             - TS_PERMIT_CERT_UID=caddy
