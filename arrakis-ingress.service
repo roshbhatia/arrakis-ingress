@@ -7,8 +7,8 @@ Requires=docker.service
 Type=simple
 User=rshnbhatia
 WorkingDirectory=/home/rshnbhatia/github/roshbhatia/arrakis-ingress
-ExecStart=/usr/bin/docker compose -f /home/roshbhatia/github/other/arrakis-ingress/docker-compose.yaml up
-ExecStop=/usr/bin/docker compose -f /home/roshbhatia/github/other/arrakis-ingress/docker-compose.yaml down
+ExecStart=/usr/bin/docker compose -f /home/rshnbhatia/github/roshbhatia/arrakis-ingress/docker-compose.yaml up
+ExecStop=/usr/bin/docker compose -f /home/rshnbhatia/github/roshbhatia/arrakis-ingress/docker-compose.yaml down
 Restart=always
 RestartSec=5s
 
