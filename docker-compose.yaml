@@ -10,3 +10,5 @@ services:
         volumes:
             - ./Caddyfile:/etc/caddy/Caddyfile
         restart: unless-stopped
+        environment:
+            - TS_PERMIT_CERT_UID=caddy
