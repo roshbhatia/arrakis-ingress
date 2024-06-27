@@ -9,6 +9,7 @@ services:
             - 443:443
         volumes:
             - ./Caddyfile:/etc/caddy/Caddyfile
+            - ./index.html:/var/www/index.html
         restart: unless-stopped
         environment:
             - TS_PERMIT_CERT_UID=caddy

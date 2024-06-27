@@ -5,6 +5,12 @@
 # Provide non-root users access to fetch certificate
 # Ensure TS_PERMIT_CERT_UID is set to the appropriate user in /etc/default/tailscaled
 
+# Static file server
+:80 {
+	root * /var/www
+	file_server
+}
+
 # grafana
 grafana.arrakis.stork-eel.ts.net {
 	reverse_proxy localhost:3000
