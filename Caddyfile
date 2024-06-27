@@ -5,38 +5,32 @@
 # Provide non-root users access to fetch certificate
 # Ensure TS_PERMIT_CERT_UID is set to the appropriate user in /etc/default/tailscaled
 
-# Static file server
-:80 {
+# Static file server and service routes
+arrakis.stork-eel.ts.net {
 	root * /var/www
 	file_server
-}
 
-# grafana
-grafana.arrakis.stork-eel.ts.net {
-	reverse_proxy localhost:3000
-}
+	route /grafana* {
+		reverse_proxy localhost:3000
+	}
 
-# plex
-plex.arrakis.stork-eel.ts.net {
-	reverse_proxy localhost:32400
-}
+	route /plex* {
+		reverse_proxy localhost:32400
+	}
 
-# overseerr
-overseer.arrakis.stork-eel.ts.net {
-	reverse_proxy localhost:5055
-}
+	route /overseerr* {
+		reverse_proxy localhost:5055
+	}
 
-# nzbget
-nzbget.arrakis.stork-eel.ts.net {
-	reverse_proxy localhost:6789
-}
+	route /nzbget* {
+		reverse_proxy localhost:6789
+	}
 
-# sonarr
-sonarr.arrakis.stork-eel.ts.net {
-	reverse_proxy localhost:8989
-}
+	route /sonarr* {
+		reverse_proxy localhost:8989
+	}
 
-# radarr
-radarr.arrakis.stork-eel.ts.net {
-	reverse_proxy localhost:7878
+	route /radarr* {
+		reverse_proxy localhost:7878
+	}
 }
