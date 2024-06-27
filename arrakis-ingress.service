@@ -1,0 +1,16 @@
+[Unit]
+Description=Arrakis Ingress
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=rshnbhatia
+WorkingDirectory=/home/rshnbhatia/github/rshnbhatia/arrakis-ingress
+ExecStart=/usr/bin/docker compose -f /home/rshnbhatia/github/other/spleeter-web/docker-compose.yaml up
+ExecStop=/usr/bin/docker compose -f /home/rshnbhatia/github/other/spleeter-web/docker-compose.yaml down
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
