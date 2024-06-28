@@ -9,7 +9,7 @@ services:
             - 443:443
         volumes:
             - ./Caddyfile:/etc/caddy/Caddyfile
-            - ./index.html:/var/www/index.html
+            - ./arrakis-ingress/out:/var/www/
             - /var/run/tailscale/tailscaled.sock:/var/run/tailscale/tailscaled.sock
         restart: unless-stopped
         network_mode: "host"
