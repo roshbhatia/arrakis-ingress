@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { JSX, SVGProps } from "react";
 
 export function Homepage() {
   return (
@@ -200,7 +201,7 @@ export function Homepage() {
   )
 }
 
-function BarChartIcon(props) {
+function BarChartIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -222,7 +223,7 @@ function BarChartIcon(props) {
 }
 
 
-function ComputerIcon(props) {
+function ComputerIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -245,7 +246,7 @@ function ComputerIcon(props) {
 }
 
 
-function DownloadIcon(props) {
+function DownloadIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -267,7 +268,7 @@ function DownloadIcon(props) {
 }
 
 
-function FilmIcon(props) {
+function FilmIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -294,7 +295,7 @@ function FilmIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -316,7 +317,7 @@ function MenuIcon(props) {
 }
 
 
-function SearchIcon(props) {
+function SearchIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -337,7 +338,7 @@ function SearchIcon(props) {
 }
 
 
-function TvIcon(props) {
+function TvIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
