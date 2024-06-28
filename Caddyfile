@@ -31,6 +31,6 @@ arrakis.stork-eel.ts.net {
 	}
 
 	handle_path /transmission {
-		redir http://transmission:9092
+		redir http://transmission:9091
 	}
 }
