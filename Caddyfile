@@ -30,7 +30,7 @@ arrakis.stork-eel.ts.net {
 		redir http://prowlerr:5055
 	}
 
-	handle_path /transmission* {
-		reverse_proxy http://transmission:9091
+	handle_path /transmission {
+		redir http://transmission:9092
 	}
 }
