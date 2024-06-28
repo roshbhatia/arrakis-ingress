@@ -18,15 +18,19 @@ arrakis.stork-eel.ts.net {
 		redir http://arrakis:5055
 	}
 
-	handle /nzbget {
-		redir http://arrakis:6789
-	}
-
 	handle /sonarr {
 		redir http://arrakis:8989
 	}
 
 	handle /radarr {
 		redir http://arrakis:7878
+	}
+
+	handle /prowlarr {
+		redir http://prowlerr:5055
+	}
+
+	handle_path /transmission* {
+		reverse_proxy http://transmission:9091
 	}
 }
