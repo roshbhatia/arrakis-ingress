@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { JSX, SVGProps } from "react";
+import { BarChartIcon } from "lucide-react";
 
 export function Homepage() {
   return (
@@ -92,7 +93,7 @@ export function Homepage() {
         <div className="container grid gap-12 px-4 md:px-6">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <a
-              href="https://placeholder.link/grafana"
+              href="https://arrakis.stork-eel.ts.net/grafana"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -102,7 +103,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Powerful data visualization and monitoring tool.</p>
             </a>
             <a
-              href="https://placeholder.link/plex"
+              href="https://arrakis.stork-eel.ts.net/plex"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -112,7 +113,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Organize and stream your media library.</p>
             </a>
             <a
-              href="https://placeholder.link/overseerr"
+              href="https://arrakis.stork-eel.ts.net/overseerr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -122,7 +123,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Manage media requests and approvals.</p>
             </a>
             <a
-              href="https://placeholder.link/sonarr"
+              href="https://arrakis.stork-eel.ts.net/sonarr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -132,7 +133,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Automated TV show downloading and management.</p>
             </a>
             <a
-              href="https://placeholder.link/radarr"
+              href="https://arrakis.stork-eel.ts.net/radarr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -142,7 +143,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Automated movie downloading and management.</p>
             </a>
             <a
-              href="https://placeholder.link/prowlarr"
+              href="https://arrakis.stork-eel.ts.net/prowlarr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -152,7 +153,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Indexer management and search for Sonarr, Radarr, and others.</p>
             </a>
             <a
-              href="https://placeholder.link/transmission"
+              href="https://arrakis.stork-eel.ts.net/transmission"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -164,28 +165,26 @@ export function Homepage() {
           </div>
         </div>
       </main>
-        </div>
-      </main>
       <footer className="bg-muted p-6 md:py-12">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold">Relevant Repos</h3>
-            <Link href="https://placeholder.link/arrakis-ingress" prefetch={false}>
+            <Link href="https://github.com/roshbhatia/arrakis-ingress/" prefetch={false}>
               Arrakis Ingress
             </Link>
-            <Link href="https://placeholder.link/mentat" prefetch={false}>
+            <Link href="https://github.com/ross-corp/mentat" prefetch={false}>
               Mentat
             </Link>
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold">Tailscale Admin</h3>
-            <Link href="https://placeholder.link/tailscale-admin" prefetch={false}>
+            <Link href="https://login.tailscale.com/admin/machines/100.84.238.17" prefetch={false}>
               Tailscale Admin
             </Link>
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold">ProtonVPN</h3>
-            <Link href="https://placeholder.link/protonvpn" prefetch={false}>
+            <Link href="https://account.protonvpn.com/account" prefetch={false}>
               ProtonVPN
             </Link>
           </div>
@@ -198,26 +197,6 @@ export function Homepage() {
   )
 }
 
-function BarChartIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="12" x2="12" y1="20" y2="10" />
-      <line x1="18" x2="18" y1="20" y2="4" />
-      <line x1="6" x2="6" y1="20" y2="16" />
-    </svg>
-  )
-}
 
 
 function ComputerIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
