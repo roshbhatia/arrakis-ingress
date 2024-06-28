@@ -27,7 +27,7 @@ arrakis.stork-eel.ts.net {
 	}
 
 	handle /prowlarr {
-		redir http://arrakis:5055
+		redir http://arrakis:9696
 	}
 
 	handle_path /transmission {
