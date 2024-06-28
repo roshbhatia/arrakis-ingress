@@ -92,7 +92,7 @@ export function Homepage() {
         <div className="container grid gap-12 px-4 md:px-6">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <a
-              href="#"
+              href="https://placeholder.link/grafana"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -102,7 +102,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Powerful data visualization and monitoring tool.</p>
             </a>
             <a
-              href="#"
+              href="https://placeholder.link/plex"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -112,7 +112,7 @@ export function Homepage() {
               <p className="text-muted-foreground">Organize and stream your media library.</p>
             </a>
             <a
-              href="#"
+              href="https://placeholder.link/overseerr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -120,10 +120,9 @@ export function Homepage() {
                 <h3 className="text-xl font-medium">Overseerr</h3>
               </div>
               <p className="text-muted-foreground">Manage media requests and approvals.</p>
-
             </a>
             <a
-              href="#"
+              href="https://placeholder.link/sonarr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -131,10 +130,9 @@ export function Homepage() {
                 <h3 className="text-xl font-medium">Sonarr</h3>
               </div>
               <p className="text-muted-foreground">Automated TV show downloading and management.</p>
-
             </a>
             <a
-              href="#"
+              href="https://placeholder.link/radarr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -142,10 +140,9 @@ export function Homepage() {
                 <h3 className="text-xl font-medium">Radarr</h3>
               </div>
               <p className="text-muted-foreground">Automated movie downloading and management.</p>
-
             </a>
             <a
-              href="#"
+              href="https://placeholder.link/prowlarr"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -153,10 +150,9 @@ export function Homepage() {
                 <h3 className="text-xl font-medium">Prowlarr</h3>
               </div>
               <p className="text-muted-foreground">Indexer management and search for Sonarr, Radarr, and others.</p>
-
             </a>
             <a
-              href="#"
+              href="https://placeholder.link/transmission"
               className="group flex flex-col items-start gap-4 rounded-lg border border-input bg-background p-6 hover:bg-muted"
             >
               <div className="flex items-center gap-2">
@@ -164,31 +160,32 @@ export function Homepage() {
                 <h3 className="text-xl font-medium">Transmission</h3>
               </div>
               <p className="text-muted-foreground">Fast, easy, and free BitTorrent client.</p>
-
             </a>
           </div>
+        </div>
+      </main>
         </div>
       </main>
       <footer className="bg-muted p-6 md:py-12">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold">Relevant Repos</h3>
-            <Link href="#" prefetch={false}>
+            <Link href="https://placeholder.link/arrakis-ingress" prefetch={false}>
               Arrakis Ingress
             </Link>
-            <Link href="#" prefetch={false}>
+            <Link href="https://placeholder.link/mentat" prefetch={false}>
               Mentat
             </Link>
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold">Tailscale Admin</h3>
-            <Link href="#" prefetch={false}>
+            <Link href="https://placeholder.link/tailscale-admin" prefetch={false}>
               Tailscale Admin
             </Link>
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold">ProtonVPN</h3>
-            <Link href="#" prefetch={false}>
+            <Link href="https://placeholder.link/protonvpn" prefetch={false}>
               ProtonVPN
             </Link>
           </div>
@@ -357,3 +354,5 @@ function TvIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
+
+
